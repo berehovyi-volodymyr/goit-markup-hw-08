@@ -1,0 +1,41 @@
+
+
+.pictures {
+    display: none;
+    padding-bottom: 94px;
+}
+
+.pictures__list {
+    display: flex;
+}
+
+.pictures__wrapper {
+    position: relative;
+}
+
+.pictures__image {
+    display: block;
+    z-index: 1;
+}
+
+.pictures__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.pictures__text {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 370px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+}
