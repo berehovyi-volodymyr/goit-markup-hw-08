@@ -1,0 +1,39 @@
+.customers {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.customers__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+@mixin border($color) {
+	border: 1px solid $color;
+}
+
+.customers__company {
+	display: block;
+	@include border(#afb1b8);
+	border-radius: 4px;
+	padding: 16px 51px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		@include border(#2196F3);
+	}
+}
+
+.customers__icon {
+	fill: #afb1b8;
+	width: 106px;
+	height: 60px;
+
+	.customers__company:hover &,
+	.customers__company:focus & {
+		fill: var(--accent-color);
+	}
+}
