@@ -832,12 +832,19 @@ ul {
   .footer__conteiner {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 60px 165px;
+    gap: 60px 188px;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 }
 
 .address {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 .address__location {
@@ -893,6 +900,11 @@ ul {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .sign-up-conteiner {
+    width: 768px;
+  }
+}
 
 .sign-up {
   display: flex;
@@ -906,6 +918,7 @@ ul {
   flex-direction: column;
   margin-top: 60px;
   width: 100%;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .sign-up__form {
@@ -924,7 +937,7 @@ ul {
 .sign-up__field {
   margin-bottom: 20px;
   padding: 14px;
-  max-width: 450px;
+  width: 100%;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -996,7 +1009,23 @@ ul {
   margin-bottom: 50px;
   gap: 20px 8px;
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .filter__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 .portfolio__conteiner {
   padding-top: 20px;
   padding-right: 24px;
@@ -1005,6 +1034,7 @@ ul {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .portfolio__link {
@@ -1014,6 +1044,13 @@ ul {
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
 .portfolio__item {
   background-color: #ffffff;
@@ -1022,7 +1059,17 @@ ul {
 .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    max-width: 354px;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
