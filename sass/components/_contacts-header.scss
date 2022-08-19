@@ -1,6 +1,10 @@
 .contact {
 	display: flex;
 	flex-direction: column;
+
+	@media screen and (min-width: 1600px){
+		flex-direction: row;
+	}	
 }
 
 .icon {
@@ -38,6 +42,13 @@
 	}
 }
 
+@media screen and (min-width: 1600px){
+	.contact__item:not(:last-child) {
+		margin-bottom: 0;
+		margin-right: 30px;
+	}
+}
+
 
 .contact__link {
 	color: var(--text-color);
@@ -53,7 +64,11 @@
 	}
 
 	@media screen and (min-width: 768px){
-		font-size: 12px
+		font-size: 12px;
+	}
+
+	@media screen and (min-width: 768px){
+		font-size: 14px;
 	}
 }
 
