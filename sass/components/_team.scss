@@ -10,6 +10,14 @@
 	}
 }
 
+@media screen and (min-width: 1200px){
+	.team {
+			flex-wrap: nowrap;
+			gap: 30px;
+		}
+
+}
+
 .team__member {
 	
 	background-color: #ffffff;
@@ -19,7 +27,7 @@
 		margin-bottom: 30px;}
 
 	@media screen and (min-width: 768px){
-		max-width: 354px;
+		max-width: calc((100% - 30px) / 2);
 		margin-bottom: 0;
 		&:not(:last-child) {
 				margin-bottom: 0;

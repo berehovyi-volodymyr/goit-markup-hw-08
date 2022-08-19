@@ -4,11 +4,11 @@
 
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
-		margin-right: 90px;
+		margin-right: 62px;
 	}
 
-	@media screen and (min-width: 1600px){
-		margin-right: 311px;
+	@media screen and (min-width: 1200px){
+		margin-right: 283px;
 	}
 }
 
@@ -51,7 +51,7 @@
 		}
 	}
 
-	@media screen and (min-width: 1600px) {
+	@media screen and (min-width: 1200px) {
 		&::after {
 			content: "";
 				display: block;

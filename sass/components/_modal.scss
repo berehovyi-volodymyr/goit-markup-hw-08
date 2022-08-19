@@ -22,7 +22,7 @@
 	.backdrop.is-hidden & {
 			transform: translate(-50%, -50%) scale(0.5);
 		}
-	@media screen and (min-width: 1600px){
+	@media screen and (min-width: 1200px){
 		max-width: 528px;
 		max-height: 581px;
 	}
@@ -117,7 +117,7 @@
 .form__checkbox {
 	margin-top: 20px;
 	// text-align: center;
-	@media screen and (min-width: 1600px){
+	@media screen and (min-width: 1200px){
 		margin-left: 12px;
 	}
 }
@@ -127,7 +127,7 @@
 	font-size: 12px;
 	line-height: 1.17;
 
-	@media screen and (min-width: 1600px){
+	@media screen and (min-width: 1200px){
 		font-size: 14px;
 	}
 }
