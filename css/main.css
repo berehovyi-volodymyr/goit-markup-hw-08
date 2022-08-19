@@ -176,6 +176,8 @@ ul {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 15px 10px;
 }
 
 .social-name {
@@ -188,14 +190,10 @@ ul {
 
 .social-list__items {
   padding-right: 10px;
-  padding-left: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .social-list__items:last-child {
   border: none;
-}
-.social-list__items:first-child {
-  padding-left: 0;
 }
 
 .nav {

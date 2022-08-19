@@ -108,6 +108,8 @@
 
 .social-list {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 15px 10px;
 }
 
 .social-name {
@@ -121,14 +123,14 @@
 
 .social-list__items{
     padding-right: 10px;
-    padding-left: 10px;
+    // padding-left: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 
     &:last-child{
         border: none;
     }
 
-    &:first-child{
-        padding-left: 0;
-    }
+    // &:first-child{
+    //     padding-left: 0;
+    // }
 }
