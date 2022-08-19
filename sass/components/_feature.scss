@@ -3,13 +3,24 @@
     padding-bottom: 60px;
 }
 
+
 .feaure__item:not(:last-child){
     margin-bottom: 30px;
 }
 
+@media screen and (min-width:768px) {
+    .feature__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .feaure__item{
+        max-width: 354px;
+    }
+}
+
 .feature__icon-space {
     display: flex;
-    max-width: 450px;
     height: 120px;
     align-items: center;
     justify-content: center;

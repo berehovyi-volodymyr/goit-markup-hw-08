@@ -2,6 +2,14 @@
 	background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+	.team{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+}
+
 .team__member {
 	
 	background-color: #ffffff;
@@ -9,6 +17,14 @@
 
 	&:not(:last-child) {
 		margin-bottom: 30px;}
+
+	@media screen and (min-width: 768px){
+		max-width: 354px;
+		margin-bottom: 0;
+		&:not(:last-child) {
+				margin-bottom: 0;
+			}
+	}
 }
 
 .team__conteiner {
