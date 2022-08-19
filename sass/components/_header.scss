@@ -4,17 +4,22 @@
 	border-bottom: 1px solid #ececec;
 	padding-top: 16px;
 	padding-bottom: 16px;
+
+	@media screen and (min-width: 768px){
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
 }
 
-// .header__conteiner {
-//     display: flex;
-//     align-items: center;
-// }
 
 .mobile-header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media screen and (min-width: 768px){
+		display: inline-flex;
+	}
 }
 .menu-toggle {
 	display: inline-flex;
@@ -42,9 +47,11 @@
 
 .menu {
 	display: flex;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+
+	@media screen and (min-width: 768px){
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 @media (max-width: 767px) {

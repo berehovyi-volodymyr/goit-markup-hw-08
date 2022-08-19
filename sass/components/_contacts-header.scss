@@ -32,9 +32,12 @@
 	}
 }
 
-.contact__item:not(:last-child) {
-	margin-right: 50px;
+@media screen and (min-width: 768px){
+	.contact__item:not(:last-child){
+		margin-bottom: 10px;
+	}
 }
+
 
 .contact__link {
 	color: var(--text-color);
@@ -47,6 +50,10 @@
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
+	}
+
+	@media screen and (min-width: 720px){
+		font-size: 12px
 	}
 }
 
