@@ -21,8 +21,8 @@
 	}
 
 	@media screen and (min-width: 1200px){
-		flex-wrap: wrap;
-		gap: 10px;
+		flex-wrap: nowrap;
+		gap: 0px;
 		align-items: baseline;
 		max-width: 1200px;
 		padding-left: 15px;
@@ -103,7 +103,7 @@
 		width: 768px;
 	}
 	@media screen and (min-width: 1200px){
-		margin-left: 93px;
+		margin-left: 85px;
 		width: 600px;
 		justify-items: flex-end;
 	}
