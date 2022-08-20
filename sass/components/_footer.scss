@@ -19,6 +19,17 @@
 		padding-left: 76px;
 		padding-right: 89px;
 	}
+
+	@media screen and (min-width: 1200px){
+		flex-wrap: wrap;
+		gap: 10px;
+		align-items: baseline;
+		max-width: 1200px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: left;
+		margin: 0 auto;
+	}
 }
 
 .address{
@@ -61,6 +72,10 @@
 .join {
 	display: flex;
 	flex-direction: column;
+	@media screen and (min-width: 1200px){
+		display: block;
+		margin-left: 70px
+	}
 }
 
 .join__title {
@@ -87,12 +102,21 @@
 	@media screen and (min-width: 768px){
 		width: 768px;
 	}
+	@media screen and (min-width: 1200px){
+		margin-left: 93px;
+		width: 600px;
+		justify-items: flex-end;
+	}
 }
 .sign-up {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	@media screen and (min-width: 1200px){
+		display: inline-flex;
+		flex-direction: row;
+	}
 }
 
 .sign-up__form {
@@ -104,6 +128,10 @@
 
 	@media screen and (min-width: 768px){
 		margin-top: 0;
+	}
+
+	@media screen and (min-width: 768px){
+		width: 358px;
 	}
 }
 
@@ -128,6 +156,11 @@
 	font-size: 16px;
 	line-height: 1.25;
 	color: rgba(255, 255, 255, 0.6);
+
+	@media screen and (min-width: 1200px){
+		margin-bottom: 0;
+		width: 358px;
+	}
 }
 
 .sign-up__button {
@@ -145,6 +178,11 @@
 	line-height: 1.88;
 	letter-spacing: 0.06em;
 	color: #ffffff;
+
+	@media screen and (min-width: 1200px) {
+		align-self: flex-end;
+		margin-left: 12px;
+	}
 }
 
 .sign-up__icon-send {

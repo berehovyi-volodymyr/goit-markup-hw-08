@@ -375,6 +375,8 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .contact__link {
+    display: flex;
+    align-items: center;
     font-size: 12px;
   }
 }
@@ -993,6 +995,18 @@ ul {
     padding-right: 89px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__conteiner {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: baseline;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
 
 .address {
   margin-bottom: 60px;
@@ -1033,6 +1047,12 @@ ul {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .join {
+    display: block;
+    margin-left: 70px;
+  }
+}
 
 .join__title {
   margin-top: 0;
@@ -1061,12 +1081,25 @@ ul {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .sign-up-conteiner {
+    margin-left: 93px;
+    width: 600px;
+    justify-items: flex-end;
+  }
+}
 
 .sign-up {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .sign-up {
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
 
 .sign-up__form {
@@ -1079,6 +1112,11 @@ ul {
 @media screen and (min-width: 768px) {
   .sign-up__form {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sign-up__form {
+    width: 358px;
   }
 }
 
@@ -1104,6 +1142,12 @@ ul {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  .sign-up__field {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
 
 .sign-up__button {
   display: inline-flex;
@@ -1118,6 +1162,12 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .sign-up__button {
+    align-self: flex-end;
+    margin-left: 12px;
+  }
 }
 
 .sign-up__icon-send {
