@@ -991,8 +991,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 60px 188px;
-    padding-left: 76px;
-    padding-right: 89px;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1008,11 +1007,11 @@ ul {
   }
 }
 
-.address {
+.logo-footer {
   margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .address {
+  .logo-footer {
     margin-bottom: 0;
   }
 }
@@ -1075,10 +1074,12 @@ ul {
 .sign-up-conteiner {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .sign-up-conteiner {
     width: 768px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1105,14 +1106,8 @@ ul {
 .sign-up__form {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
   width: 100%;
   max-width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .sign-up__form {
-    margin-top: 0;
-  }
 }
 @media screen and (min-width: 768px) {
   .sign-up__form {
